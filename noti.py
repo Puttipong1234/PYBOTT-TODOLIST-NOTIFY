@@ -54,7 +54,7 @@ def get_noti_data():
 
     for number,each in enumerate(data):
 
-        data_to_noti = "📋TODOLIST .... 📋 \n"
+        data_to_noti = "\n📋TODOLIST .... 📋 \n"
         data_to_noti_1_in = False
         data_to_noti_2_in = False
 

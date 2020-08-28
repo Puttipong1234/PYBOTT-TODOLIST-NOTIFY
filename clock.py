@@ -21,7 +21,7 @@ def notify_app():
     for msg in msgs:
         r = requests.post(url, headers=headers , data = {'message':msg})
     
-    break_line = "📋 Thank For Your Kind Attention ! 📋"
+    break_line = "📋📋📋📋📋📋📋📋📋📋📋📋📋📋📋📋📋📋📋📋📋📋📋📋📋📋📋📋📋📋📋📋📋📋📋📋"
     r = requests.post(url, headers=headers , data = {'message':break_line})
 
 # @sched.scheduled_job('interval', seconds=30)
