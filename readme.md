@@ -55,13 +55,17 @@ python -m venv venv (use python 3.6.8 - 3.6.10)
     git push heroku master
     ```
     อย่าลืม commend ฟังชั่นที่ทดสอบทุกๆ30 วินาทีออกด้วยนะจะ
+
+    เราจะได้ผลลัพธ์ออกมาประมาณนี้เลย
+    ![ScreenShot](https://raw.githubusercontent.com/Puttipong1234/PYBOTT-TODOLIST-NOTIFY/master/PIC/res.PNG)
+
 ### notes: หากเกิดข้อผิดพลาดทดลองคำสั่ง
 
     ```
     heroku logs --tail
     ```
 
-    เพื่อดูว่าเกิดอะไรขึ้นเนอะ หรือจะไปที่ console ของ heroku ก็ได้เช่นกัน
+    เพื่อดูว่าเกิดอะไรขึ้นเนอะ หรือจะไปที่ เว็บ console ของ heroku ก็ได้เช่นกัน
     โดยไปที่ more > View logs
 
 - ![ScreenShot](https://raw.githubusercontent.com/Puttipong1234/PYBOTT-TODOLIST-NOTIFY/master/PIC/heroku.PNG)
