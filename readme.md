@@ -19,7 +19,15 @@ python -m venv venv (use python 3.6.8 - 3.6.10)
 ![ScreenShot](https://finnbarsmithdotcom.files.wordpress.com/2014/08/spreadsheet-key.png)
 
 6. เปิดการใช้งาน API ของ Google sheet เข้าไปที่ google cloud console (ไม่สอนแล้วเด้ออ.. ดูโพสเก่าเอานะ)
- - สร้าง Project ![ScreenShot](https://miro.medium.com/max/770/1*IhH3ZR7EuHcUM6JGXLEQJA.png)
+ - ![ScreenShot](https://raw.githubusercontent.com/Puttipong1234/PYBOTT-TODOLIST-NOTIFY/master/PIC/gcp_api.PNG)
+ - ตย. Service Account ![ScreenShot](https://raw.githubusercontent.com/Puttipong1234/PYBOTT-TODOLIST-NOTIFY/master/PIC/service%20account.PNG)
+ 
+ - เก็บไฟล์ credentails.json ไว้นะครับ
+
+7. เปิดการใช้งาน Line Notification
+    ![ScreenShot](https://raw.githubusercontent.com/Puttipong1234/PYBOTT-TODOLIST-NOTIFY/master/PIC/service%20account.PNG)
+
+
 
 
 #### ฝากติดตาม กดไลค์ กดแชร์ คอนเทน เพื่อเป็นกำลังใจแก่ทีมงานด้วยนะครับขอบพระคุณอย่างสูง
