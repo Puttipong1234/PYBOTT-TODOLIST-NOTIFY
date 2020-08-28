@@ -39,13 +39,29 @@ python -m venv venv (use python 3.6.8 - 3.6.10)
     git commit -m "first commit"
     git remote add heroku <ใส่ชื่อ repo heroku ได้เลย>
 
-    git push heroku master
-
     heroku ps:scale clock=1
+    ```
 
 9. ไปที่หน้า console ของ app-heroku ที่เราได้สร้างไว้แล้วไปที่ settings
-    จากนั้นเพิ่ม environment variable ลงไปดังนี้
-    - ![ScreenShot](https://raw.githubusercontent.com/Puttipong1234/PYBOTT-TODOLIST-NOTIFY/master/PIC/line.PNG)
+    จากนั้นเพิ่ม environment variable ลงไปดังนี้ (เอาตามของที่ตนเองเก็บไว้นะครับ... ยกเว้นตัวแปรบนสุดจะให้ตั้งเป็น google-credentials.json)
+    - ![ScreenShot](https://raw.githubusercontent.com/Puttipong1234/PYBOTT-TODOLIST-NOTIFY/master/PIC/heroku.PNG)
+
+    - add buildpack ดังนี้ https://github.com/gerywahyunugraha/heroku-google-application-credentials-buildpack
+
+10. deploy โล้ด เสร็จแบล้วววว!!
+    ```
+    git push heroku master
+    ```
+
+11. หากเกิดข้อผิดพลาดทดลองคำสั่ง
+
+    ```
+    heroku logs --tail
+    ```
+
+    เพื่อดูว่าเกิดอะไรขึ้นเนอะ
+
+
 
 
 
