@@ -2,7 +2,6 @@ from apscheduler.schedulers.blocking import BlockingScheduler
 from config import *
 import requests
 from noti import get_noti_data
-import datetime
 
 url = 'https://notify-api.line.me/api/notify'
 token = notify_token
@@ -15,7 +14,7 @@ from datetime import datetime
 @sched.scheduled_job('cron', day_of_week='mon-fri', hour=3) # เตือนทุกสิบโมง จันถึงศุกร์ (heroku server +7 GMT thailand)
 def notify_app():
     
-    data_to_noti = "📋 TODOLIST .... ประจำวันที่ {} 📋".format(str(datetime.datetime.now())[:10])
+    data_to_noti = "📋 TODOLIST .... ประจำวันที่ {} 📋".format(str(datetime.now())[:10])
     r = requests.post(url, headers=headers , data = {'message':data_to_noti})
     
     msgs = get_noti_data()
