@@ -53,13 +53,16 @@ python -m venv venv (use python 3.6.8 - 3.6.10)
     git push heroku master
     ```
 
-11. หากเกิดข้อผิดพลาดทดลองคำสั่ง
+### notes: หากเกิดข้อผิดพลาดทดลองคำสั่ง
 
     ```
     heroku logs --tail
     ```
 
-    เพื่อดูว่าเกิดอะไรขึ้นเนอะ
+    เพื่อดูว่าเกิดอะไรขึ้นเนอะ หรือจะไปที่ console ของ heroku ก็ได้เช่นกัน
+    โดยไปที่ more > View logs
+
+    - ![ScreenShot](https://raw.githubusercontent.com/Puttipong1234/PYBOTT-TODOLIST-NOTIFY/master/PIC/heroku.PNG)
 
 
 

@@ -33,7 +33,7 @@ def TEST_CRON_NOTIFY():
     print("Cron job is running")
     print("Tick! The time is: %s" % datetime.now())
     
-    data_to_noti = "📋 TODOLIST .... ประจำวันที่ {} 📋".format(str(datetime.datetime.now())[:10])
+    data_to_noti = "📋 TODOLIST .... ประจำวันที่ {} 📋".format(str(datetime.now())[:10])
     r = requests.post(url, headers=headers , data = {'message':data_to_noti})
     
     msgs = get_noti_data()
