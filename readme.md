@@ -11,8 +11,8 @@ python -m venv venv (use python 3.6.8 - 3.6.10)
 3. activate virtual evironment 
 ```
 (window : venv\Scripts\activate / mac : source venv\bin\activate)
+pip install -r requirements.txt
 ```
-3. pip install -r requirements.txt
 4. สร้าง Google sheet ของท่าน ตามตัวอย่างดังนี้ https://docs.google.com/spreadsheets/d/1lazyX90x7dRpIV84QhKxKZH0QFN2J-x0P9N_hh1e3hA/edit?usp=sharing โดยให้ header ตรงตามหัวข้อ (อย่าลืม Freeze header ไว้ด้วยนะ ให้มันอยู่แถวที่ 1 ตลอด)
 
 5. เก็บ Spreadsheet_key ของท่านไว้ ดังภาพ
