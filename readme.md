@@ -1,6 +1,6 @@
 ## Source Code Pybott ทำ TODO List notify ภายในไม่กี่ขั้นตอน
 
-![ScreenShot](https://scontent.fbkk22-2.fna.fbcdn.net/v/t1.0-9/118233601_647323549491993_4702889884263288407_n.png?_nc_cat=106&_nc_sid=19369f&_nc_ohc=5ofwRkRQ-BkAX8cVUAa&_nc_ht=scontent.fbkk22-2.fna&oh=f9f8974bc86fadad933de603079f5d9e&oe=5F6BF6CC)
+![ScreenShot](https://i.ibb.co/HN9FBks/8.png)
 
 ## วิธีการใช้งานเบื้องต้น
 1. cmd > git clone https://github.com/Puttipong1234/PYBOTT-TODOLIST-NOTIFY
