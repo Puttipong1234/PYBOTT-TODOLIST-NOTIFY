@@ -22,7 +22,7 @@ python -m venv venv (use python 3.6.8 - 3.6.10)
  - ![ScreenShot](https://raw.githubusercontent.com/Puttipong1234/PYBOTT-TODOLIST-NOTIFY/master/PIC/gcp_api.PNG)
  - ตย. Service Account ![ScreenShot](https://raw.githubusercontent.com/Puttipong1234/PYBOTT-TODOLIST-NOTIFY/master/PIC/service%20account.PNG)
  
- - เก็บไฟล์ credentails.json ไว้นะครับ
+ - เก็บไฟล์ credentails.json ไว้นะครับ เราจะนำเนื้อหาในไฟล์ไปใส่ไว้ใน env variable ของขั้นตอนที่ 9
 
 7. เปิดการใช้งาน Line Notification (ไม่สอนแล้วเด้ออ.. หา Resource ได้ง่ายๆตาม google เลย)
     - ![ScreenShot](https://raw.githubusercontent.com/Puttipong1234/PYBOTT-TODOLIST-NOTIFY/master/PIC/line.PNG)
@@ -46,6 +46,8 @@ python -m venv venv (use python 3.6.8 - 3.6.10)
     จากนั้นเพิ่ม environment variable ลงไปดังนี้ (เอาตามของที่ตนเองเก็บไว้นะครับ... ยกเว้นตัวแปรบนสุดจะให้ตั้งเป็น google-credentials.json)
     - ![ScreenShot](https://raw.githubusercontent.com/Puttipong1234/PYBOTT-TODOLIST-NOTIFY/master/PIC/heroku.PNG)
 
+    - spread sheet link คือ ลิงค์ที่กดแล้วจะเข้าไปที่หน้า sheet ของเรานะครับ 
+
     - add buildpack ดังนี้ https://github.com/gerywahyunugraha/heroku-google-application-credentials-buildpack
 
 10. deploy โล้ด เสร็จแบล้วววว!!
@@ -62,7 +64,7 @@ python -m venv venv (use python 3.6.8 - 3.6.10)
     เพื่อดูว่าเกิดอะไรขึ้นเนอะ หรือจะไปที่ console ของ heroku ก็ได้เช่นกัน
     โดยไปที่ more > View logs
 
-    - ![ScreenShot](https://raw.githubusercontent.com/Puttipong1234/PYBOTT-TODOLIST-NOTIFY/master/PIC/heroku.PNG)
+- ![ScreenShot](https://raw.githubusercontent.com/Puttipong1234/PYBOTT-TODOLIST-NOTIFY/master/PIC/heroku.PNG)
 
 
 
