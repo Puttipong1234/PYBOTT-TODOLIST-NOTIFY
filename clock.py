@@ -24,24 +24,25 @@ def notify_app():
     break_line = "\n🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥"
     r = requests.post(url, headers=headers , data = {'message':break_line})
 
-@sched.scheduled_job('interval', seconds=600)
-def TEST_CRON_NOTIFY():
-    """
-    Main cron job.
-    The main cronjob to be run continuously.
-    """
-    print("Cron job is running")
-    print("Tick! The time is: %s" % datetime.now())
+# # Uncommend thsi in test mode
+# @sched.scheduled_job('interval', seconds=600)
+# def TEST_CRON_NOTIFY():
+#     """
+#     Main cron job.
+#     The main cronjob to be run continuously.
+#     """
+#     print("Cron job is running")
+#     print("Tick! The time is: %s" % datetime.now())
     
-    data_to_noti = "\n📋 TODOLIST .... ประจำวันที่ {} 📋".format(str(datetime.now())[:10])
-    r = requests.post(url, headers=headers , data = {'message':data_to_noti})
+#     data_to_noti = "\n📋 TODOLIST .... ประจำวันที่ {} 📋".format(str(datetime.now())[:10])
+#     r = requests.post(url, headers=headers , data = {'message':data_to_noti})
     
-    msgs = get_noti_data()
-    for msg in msgs:
-        r = requests.post(url, headers=headers , data = {'message':msg})
+#     msgs = get_noti_data()
+#     for msg in msgs:
+#         r = requests.post(url, headers=headers , data = {'message':msg})
     
-    break_line = "\n🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥"
-    r = requests.post(url, headers=headers , data = {'message':break_line})
+#     break_line = "\n🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥"
+#     r = requests.post(url, headers=headers , data = {'message':break_line})
 
 @sched.scheduled_job('interval', minutes=3)
 def timed_job():
