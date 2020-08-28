@@ -52,7 +52,7 @@ python -m venv venv (use python 3.6.8 - 3.6.10)
     ```
     git push heroku master
     ```
-
+    อย่าลืม commend ฟังชั่นที่ทดสอบทุกๆ30 วินาทีออกด้วยนะจะ
 ### notes: หากเกิดข้อผิดพลาดทดลองคำสั่ง
 
     ```
