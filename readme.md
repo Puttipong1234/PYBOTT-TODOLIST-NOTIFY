@@ -18,14 +18,34 @@ python -m venv venv (use python 3.6.8 - 3.6.10)
 5. เก็บ Spreadsheet_key ของท่านไว้ ดังภาพ
 ![ScreenShot](https://finnbarsmithdotcom.files.wordpress.com/2014/08/spreadsheet-key.png)
 
-6. เปิดการใช้งาน API ของ Google sheet เข้าไปที่ google cloud console (ไม่สอนแล้วเด้ออ.. ดูโพสเก่าเอานะ)
+6. เปิดการใช้งาน API ของ Google sheet เข้าไปที่ google cloud console (ไม่สอนแล้วเด้ออ.. ดูโพสเก่าเอานะ หรือ หา Resource การเปิดใช้งาน google sheet api ได้ง่ายๆตาม google เลย)
  - ![ScreenShot](https://raw.githubusercontent.com/Puttipong1234/PYBOTT-TODOLIST-NOTIFY/master/PIC/gcp_api.PNG)
  - ตย. Service Account ![ScreenShot](https://raw.githubusercontent.com/Puttipong1234/PYBOTT-TODOLIST-NOTIFY/master/PIC/service%20account.PNG)
  
  - เก็บไฟล์ credentails.json ไว้นะครับ
 
-7. เปิดการใช้งาน Line Notification
-    ![ScreenShot](https://raw.githubusercontent.com/Puttipong1234/PYBOTT-TODOLIST-NOTIFY/master/PIC/service%20account.PNG)
+7. เปิดการใช้งาน Line Notification (ไม่สอนแล้วเด้ออ.. หา Resource ได้ง่ายๆตาม google เลย)
+    - ![ScreenShot](https://raw.githubusercontent.com/Puttipong1234/PYBOTT-TODOLIST-NOTIFY/master/PIC/line.PNG)
+    - สร้างกลุ่ม แล้วแอดเจ้า notify เข้าไป ผ่าน browser จากนั้น เก็บ Token ของกลุ่มเอาไว้นะครับ
+
+8. เรียบร้อย deploy to heroku (install git scm & heroku cli ก่อนเนอะ) เสจแล้วพิมพ์ใน command line ของโปรเจคได้เลยจร้า
+    ```
+    heroku create
+
+    #จะได้ git repo ของ heroku มา copy ไว้แล้วพิมพ์ต่อเลยยย
+
+    git init
+    git add .
+    git commit -m "first commit"
+    git remote add heroku <ใส่ชื่อ repo heroku ได้เลย>
+
+    git push heroku master
+
+    heroku ps:scale clock=1
+
+9. ไปที่หน้า console ของ app-heroku ที่เราได้สร้างไว้แล้วไปที่ settings
+    จากนั้นเพิ่ม environment variable ลงไปดังนี้
+    - ![ScreenShot](https://raw.githubusercontent.com/Puttipong1234/PYBOTT-TODOLIST-NOTIFY/master/PIC/line.PNG)
 
 
 
