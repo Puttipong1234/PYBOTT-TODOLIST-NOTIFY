@@ -6,6 +6,7 @@
 1. cmd > git clone https://github.com/Puttipong1234/PYBOTT-TODOLIST-NOTIFY
 2. สร้าง virtual env 
 ```
+cd PYBOTT-TODOLIST-NOTIFY
 python -m venv venv (use python 3.6.8 - 3.6.10)
 ```
 3. activate virtual evironment 
